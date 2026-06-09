@@ -1,8 +1,11 @@
 <template>
-  <div class="card">
-    <h2>{{ titre }}</h2>
-    <p>{{ description}}</p>
-    <button>Voter</button>
+  <div>
+    <CardIdee
+      v-for="idee in idees"
+      :key="idee.id"
+      :titre="idee.titre"
+      :description="idee.description"
+    />
   </div>
 </template>
 
