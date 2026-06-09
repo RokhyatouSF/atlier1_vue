@@ -1,12 +1,16 @@
 <template>
   <div class="card">
-    <h2>Titre</h2>
-    <p>Description</p>
+    <h2>{{ titre }}</h2>
+    <p>{{ description}}</p>
     <button>Voter</button>
   </div>
 </template>
 
 <script setup>
+defineProps({
+  titre: String,
+  description: String
+})
 </script>
 
 <style scoped>
