@@ -7,10 +7,11 @@
 </template>
 
 <script setup>
-defineProps({
-  titre: String,
-  description: String
-})
+const idees = [
+  { id: 1, titre: "Idée 1", description: "Texte 1" },
+  { id: 2, titre: "Idée 2", description: "Texte 2" },
+  { id: 3, titre: "Idée 3", description: "Texte 3" }
+]
 </script>
 
 <style scoped>
